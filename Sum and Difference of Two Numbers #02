@@ -1,0 +1,23 @@
+/*Akhil Gokuldas*/
+//hackerrank
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main()
+{
+  int a,b;
+  float c,d;
+	  //printf("\n Enter two integers : ");
+    scanf("%d\n%d",&a,&b);
+
+    //printf("\nEnter two floating point numbers : ");
+    scanf("%f\n%f",&c,&d);
+
+    printf("%d %d\n%.1f %.1f",a+b,a-b,c+d,c-d);// .<numeric_val>f , here the numeric_val is a number that determines the precision of f
+    
+    return 0;
+}
+
