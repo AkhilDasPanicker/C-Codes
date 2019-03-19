@@ -1,0 +1,28 @@
+/*Akhil Gokuldas*/
+//hackerrank
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+    char ch;
+    char s[50];
+    char s2[100];
+
+    //printf("\nEnter a character : ");
+        scanf(" %c",&ch);
+    //printf("\nEnter your string : ");
+        scanf(" %s",s);
+    // printf("\nEnter your sentence : ");
+        scanf("\n");// To ignore the initially read \n from the previous line to continue reading; 
+        scanf("%[^\n]%*c",s2); // syntax to rtake a line as an input. Inorder to read next line sw need to scan \n again.
+
+    printf("%c\n%s\n%s",ch,s,s2);
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+
