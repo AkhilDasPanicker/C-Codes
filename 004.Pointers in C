@@ -1,0 +1,24 @@
+//akhil gokuldas
+#include <stdio.h>
+#include <stdlib.h>
+
+void update(int *a,int *b) {
+    
+    int t1=*a,t2=*b;
+    *a=t1+t2;
+    *b=abs(t1-t2);//abs() returns the absolute value
+
+}
+
+int main() {
+    int a, b;
+    int *pa = &a, *pb = &b;// returning &a or pa gives memory address of a , *p or a refers to contents inside a.
+    
+    scanf("%d %d", &a, &b);
+    update(pa, pb);//same as calling &a , &b
+    printf("%d\n%d", a, b);
+
+    return 0;
+}
+/*A pointer in C is a way to share a memory address among different contexts (primarily functions). 
+They are primarily used whenever a function needs to modify the content of a variable, of which it doesn't have ownership. */
